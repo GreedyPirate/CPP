@@ -1,0 +1,18 @@
+{
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 18,
+    "editor.codeActionsOnSave": null,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o E:/program/workspace/vs-code/cpp/.vscode/output/$fileNameWithoutExt && E:/program/workspace/vs-code/cpp/.vscode/output/$fileNameWithoutExt",
+    },
+    "files.associations": {
+        "chrono": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "xutility": "cpp"
+    }
+}
