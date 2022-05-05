@@ -1,11 +1,11 @@
 {
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
-    "editor.fontSize": 18,
+    "editor.fontSize": 14,
     "editor.codeActionsOnSave": null,
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
-        "cpp": "cd $dir && g++ $fileName -o E:/program/workspace/vs-code/cpp/.vscode/output/$fileNameWithoutExt && E:/program/workspace/vs-code/cpp/.vscode/output/$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++17 $fileName -o $workspaceRoot/.vscode/output/$fileNameWithoutExt && $workspaceRoot/.vscode/output/$fileNameWithoutExt",
     },
     "files.associations": {
         "chrono": "cpp",
@@ -13,6 +13,14 @@
         "ostream": "cpp",
         "xstring": "cpp",
         "iostream": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "unordered_map": "cpp",
+        "__hash_table": "cpp",
+        "functional": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "memory": "cpp"
     }
 }
