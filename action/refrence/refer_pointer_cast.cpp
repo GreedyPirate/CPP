@@ -25,6 +25,6 @@ int main() {
     // 引用转指针，其实就是取地址
     funp(&n);
 
-
+    fun(a);
     return 0;
 }
