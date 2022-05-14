@@ -1,11 +1,11 @@
 {
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.codeActionsOnSave": null,
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
-        "cpp": "cd $dir && g++ -std=c++11 $fileName -o $workspaceRoot/.vscode/output/$fileNameWithoutExt -I $workspaceRoot && $workspaceRoot/.vscode/output/$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++11 -lprotobuf $fileName -o $workspaceRoot/.vscode/output/$fileNameWithoutExt -I $workspaceRoot && $workspaceRoot/.vscode/output/$fileNameWithoutExt",
     },
     "files.associations": {
         "chrono": "cpp",
@@ -64,6 +64,7 @@
         "optional": "cpp",
         "string_view": "cpp",
         "fstream": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "regex": "cpp"
     }
 }

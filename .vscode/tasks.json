@@ -6,8 +6,12 @@
             "args": [
                 "-g",
                 "${file}",
+                "-lstdc++",
+                "-std=c++11",
                 "-o",
-                "${workspaceRoot}/.vscode/output/${fileBasenameNoExtension}.exe"
+                "${workspaceRoot}/.vscode/output/${fileBasenameNoExtension}.exe",
+                "-I",
+                "${workspaceRoot}"
             ],
             "problemMatcher": {
                 "owner": "cpp",
@@ -23,6 +27,9 @@
                     "severity": 4,
                     "message": 5
                 }
+            },
+            "presentation": {
+                "panel": "new" //解决终端将被任务重用，按任意键关闭
             },
             "group": {
                 "kind": "build",
