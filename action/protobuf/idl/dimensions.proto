@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option cc_enable_arenas = true;
+
+package test;
+ 
+message DimensionValues {
+    repeated string value = 1;
+}
+
+message DimensionProto {
+    map<string, DimensionValues> dimensions = 1;
+}
