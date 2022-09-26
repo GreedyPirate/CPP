@@ -63,8 +63,38 @@ void decode() {
     
 }
 
+void model_json() {
+    std::string = "R(
+        "{
+            "model_name": "home_sort_v",
+            "udf": [
+                {
+                    "feature_name": "user_price",
+                    "origin_feature": "$F$hyperspace_waimai_stat_uuid_price_dist_rank_v1.user_price_percentile",
+                    "process_type": "sequence",
+                    "arguments":  "length=13,padding=0,min=20,max=40,output_type=int64",
+                    "normalized": "none",
+                    "default_value": [0.0]
+                }, 
+                {
+                    "feature_name": "user_tag_exps_no_ord",
+                    "origin_feature": "test_float",
+                    "process_type": "sequence",
+                    "arguments":  "length=13,padding=0,min=20,max=40,output_type=float",
+                    "normalized": "none",
+                    "default_value": [0.0]
+                }
+            ],
+            "dict_name": "dict_path",
+            "engine_appkey": "com.sankuai.wmdrank.ms.boosterengine",
+            "engine_service": "com.sankuai.meituan.waimai.booster.thrift.OnlineService"
+        }"
+    )"
+    
+}
+
 int main() {
-    encode();
+    // encode();
     decode();
     return 0;
 }
